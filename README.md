@@ -5,7 +5,7 @@ Projeto desenvolvido para a disciplina de Programação Spring Boot com Persist�
 ## Integrantes
 
 - Nome: Gustavo Ribeiro - RM 564995
-- Nome: Enzo Xavier Coelho - RM
+- Nome: Enzo Xavier Coelho - RM563379
 - Nome: Matheus Gianolli - RM
 - Nome: Larissa Magalhães - RM
 - Nome: Julia - RM
@@ -57,7 +57,12 @@ A classe `Brinquedo` representa a tabela `TDS_TB_BRINQUEDOS` no banco de dados O
 
 ## Etapa 2 - Banco de Dados Oracle
 
-A preencher pelo responsável pela configuração do banco.
+Foi criado uma tabela no banco de dados Oracle que suporta a classe model de Brinquedos, ela foi criada com hibernate, utilizando o método update no application.properties.
+
+Além disso, também foi criado uma nova classe para teste de conexão no path connection. Sem uso, por enquanto pelo menos
+
+<img width="489" height="214" alt="image" src="https://github.com/user-attachments/assets/c8fdb0ed-a32b-4bd5-9819-50a61b44abe4" />
+
 
 ## Etapa 3 - Repository e Service
 
