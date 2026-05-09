@@ -7,7 +7,7 @@ Projeto desenvolvido para a disciplina de Programação Spring Boot com Persist�
 - Nome: Gustavo Ribeiro - RM 564995
 - Nome: Enzo Xavier Coelho - RM563379
 - Nome: Matheus Gianolli - RM565258
-- Nome: Larissa Magalhães - RM
+- Nome: Larissa Juvenal de Magalhães - RM 566457
 - Nome: Julia - RM
 
 ## Descrição do Projeto
@@ -97,7 +97,25 @@ src/main/java/br/com/fiap/checkpoint2
     └── BrinquedoService.java
 
 <img width="640" height="269" alt="image" src="https://github.com/user-attachments/assets/e1e2fa36-8041-4053-9fd0-98f9465ea307" />
+## Etapa 4 - Controller e Endpoints
 
+Nesta etapa foi criada a camada Controller da aplicação, responsável por receber as requisições HTTP e direcioná-las para a camada Service.
+
+Foi criado o pacote controller contendo a classe BrinquedoController.
+
+A classe utiliza a anotação @RestController e possui os endpoints CRUD da aplicação.
+
+### Endpoints Criados
+
+| Método | Endpoint | Descrição |
+|--------|----------|------------|
+| GET | /brinquedos | Lista todos os brinquedos |
+| GET | /brinquedos/{id} | Busca brinquedo por ID |
+| POST | /brinquedos | Cadastra um novo brinquedo |
+| PUT | /brinquedos/{id} | Atualiza um brinquedo |
+| DELETE | /brinquedos/{id} | Remove um brinquedo |
+
+Os endpoints foram desenvolvidos utilizando Spring Boot e integrados com a camada Service.
 
 
 
@@ -107,12 +125,6 @@ src/main/java/br/com/fiap/checkpoint2
 <img width="640" height="269" alt="image" src="https://github.com/user-attachments/assets/b7a6a2a8-7b5a-40cf-b7f8-8a9e536722ac" />
 
 
-   
-
-
-## Etapa 4 - Controller e Endpoints
-
-A preencher pelo responsável pelos endpoints CRUD.
 
 ## Etapa 5 - Testes no Postman/Insomnia
 
