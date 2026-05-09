@@ -43,3 +43,5 @@ public class Brinquedo {
     @Column(name = "PRECO", nullable = false, precision = 10, scale = 2)
     private BigDecimal preco;
 }
+
+
