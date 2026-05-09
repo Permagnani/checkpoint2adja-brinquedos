@@ -6,7 +6,7 @@ Projeto desenvolvido para a disciplina de Programação Spring Boot com Persist�
 
 - Nome: Gustavo Ribeiro - RM 564995
 - Nome: Enzo Xavier Coelho - RM563379
-- Nome: Matheus Gianolli - RM
+- Nome: Matheus Gianolli - RM565258
 - Nome: Larissa Magalhães - RM
 - Nome: Julia - RM
 
@@ -66,7 +66,40 @@ Além disso, também foi criado uma nova classe para teste de conexão no path c
 
 ## Etapa 3 - Repository e Service
 
-A preencher pelo responsável pela camada de persistência e regra de negócio.
+## Etapa 3 - Repository e Service
+
+Nesta etapa, foram implementadas as camadas de acesso a dados (Persistência) e de regras de negócio (Service) da aplicação. A arquitetura foi construída visando a separação de responsabilidades (Separation of Concerns).
+
+### 1. Camada de Persistência (Repository)
+Foi criado o pacote `repository` contendo a interface `BrinquedoRepository`.
+- **Tecnologia:** Spring Data JPA.
+- **Detalhes:** A interface estende `JpaRepository<Brinquedo, Long>`, o que provê automaticamente todos os métodos essenciais de CRUD (Create, Read, Update, Delete) sem a necessidade de escrever comandos SQL manualmente no código. Ela atua como a ponte direta com o banco de dados Oracle configurado na Etapa 2.
+
+### 2. Camada de Regras de Negócio (Service)
+Foi criado o pacote `service` contendo a classe `BrinquedoService` (anotada com `@Service`).
+- **Responsabilidade:** Centralizar a lógica de negócio do sistema. O Service é o intermediário seguro entre os Endpoints (que serão criados no Controller) e o Banco de Dados (Repository).
+- **Injeção de Dependência:** Utiliza a anotação `@Autowired` para instanciar o `BrinquedoRepository`.
+- **Métodos Implementados:**
+  - `listarTodos()`: Retorna uma lista completa com todos os brinquedos cadastrados no banco de dados.
+  - `buscarPorId(Long id)`: Retorna um brinquedo específico baseado no seu identificador único.
+  - `salvar(Brinquedo brinquedo)`: Recebe um novo objeto do tipo Brinquedo e realiza a persistência no banco.
+  - `atualizar(Long id, Brinquedo brinquedoDetalhes)`: Busca um brinquedo existente pelo seu ID, atualiza de forma segura todos os seus atributos (Nome, Tipo, Classificação, Tamanho e Preço) e salva as alterações. Caso o ID não seja encontrado, dispara uma exceção em tempo de execução (`RuntimeException`).
+  - `deletar(Long id)`: Remove permanentemente o registro de um brinquedo do banco de dados com base no ID fornecido.
+
+### Estrutura de Pastas (Pós-Etapa 3):
+
+src/main/java/br/com/fiap/checkpoint2
+├── model
+│   └── Brinquedo.java
+├── repository
+│   └── BrinquedoRepository.java
+└── service
+    └── BrinquedoService.java
+
+<img width="730" height="269" alt="image" src="https://github.com/user-attachments/assets/e1e2fa36-8041-4053-9fd0-98f9465ea307" />
+
+   
+
 
 ## Etapa 4 - Controller e Endpoints
 
