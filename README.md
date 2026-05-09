@@ -29,6 +29,26 @@ O projeto utiliza Spring Boot com Maven em Java e banco de dados Oracle. Os endp
 - Oracle SQL Developer
 - Postman ou Insomnia
 
+---
+
+## Configuração do Projeto Spring Initializr
+
+O projeto foi criado utilizando Spring Initializr com Java 17 e gerenciamento Maven, contendo as dependências necessárias para desenvolvimento da API REST integrada ao banco Oracle.
+
+### Dependências utilizadas
+
+- Spring Web
+- Spring Data JPA
+- Oracle Driver
+- Lombok
+- Validation
+
+
+<img width="1600" height="732" alt="spring-initializr-config" src="https://github.com/user-attachments/assets/3d00ac58-a193-4612-9d12-83701d1d3609" />
+
+
+---
+
 ## Estrutura do Projeto
 
 ```text
