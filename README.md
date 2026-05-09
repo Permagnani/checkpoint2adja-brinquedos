@@ -98,6 +98,10 @@ src/main/java/br/com/fiap/checkpoint2
 
 <img width="730" height="269" alt="image" src="https://github.com/user-attachments/assets/e1e2fa36-8041-4053-9fd0-98f9465ea307" />
 
+
+<img width="1323" height="664" alt="image" src="https://github.com/user-attachments/assets/b7a6a2a8-7b5a-40cf-b7f8-8a9e536722ac" />
+
+
    
 
 
