@@ -32,7 +32,6 @@ O projeto utiliza Spring Boot com Maven em Java e banco de dados Oracle. Os endp
 ## Estrutura do Projeto
 
 ```text
-```text
 checkpoint2adja-brinquedos-main
 ├── .gitattributes
 ├── .gitignore
@@ -70,7 +69,7 @@ checkpoint2adja-brinquedos-main
 │                   └── fiap
 │                       └── checkpoint2
 │                           └── Checkpoint2ApplicationTests.java
-```
+
 
 ```
 
