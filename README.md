@@ -32,16 +32,46 @@ O projeto utiliza Spring Boot com Maven em Java e banco de dados Oracle. Os endp
 ## Estrutura do Projeto
 
 ```text
-src/main/java/br/com/fiap/checkpoint2
-├── Checkpoint2Application.java
-├── controller
-│   └── BrinquedoController.java
-├── model
-│   └── Brinquedo.java
-├── repository
-│   └── BrinquedoRepository.java
-└── service
-    └── BrinquedoService.java
+```text
+checkpoint2adja-brinquedos-main
+├── .gitattributes
+├── .gitignore
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── .mvn
+│   └── wrapper
+│       └── maven-wrapper.properties
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── br
+│   │   │       └── com
+│   │   │           └── fiap
+│   │   │               └── checkpoint2
+│   │   │                   ├── Checkpoint2Application.java
+│   │   │                   ├── connection
+│   │   │                   │   └── TestController.java
+│   │   │                   ├── controller
+│   │   │                   │   └── BrinquedoController.java
+│   │   │                   ├── model
+│   │   │                   │   └── Brinquedo.java
+│   │   │                   ├── repository
+│   │   │                   │   └── BrinquedoRepository.java
+│   │   │                   └── service
+│   │   │                       └── BrinquedoService.java
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── br
+│               └── com
+│                   └── fiap
+│                       └── checkpoint2
+│                           └── Checkpoint2ApplicationTests.java
+```
+
 ```
 
 ## Etapa 1 - Projeto Base e Classe Brinquedo
