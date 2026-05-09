@@ -97,6 +97,8 @@ src/main/java/br/com/fiap/checkpoint2
     └── BrinquedoService.java
 
 <img width="640" height="269" alt="image" src="https://github.com/user-attachments/assets/e1e2fa36-8041-4053-9fd0-98f9465ea307" />
+
+
 ## Etapa 4 - Controller e Endpoints
 
 Nesta etapa foi criada a camada Controller da aplicação, responsável por receber as requisições HTTP e direcioná-las para a camada Service.
