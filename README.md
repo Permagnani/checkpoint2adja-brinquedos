@@ -4,11 +4,11 @@ Projeto desenvolvido para a disciplina de Programação Spring Boot com Persist�
 
 ## Integrantes
 
-- Nome: Gustavo Ribeiro - RM 564995
+- Nome: Gustavo Ribeiro - RM564995
 - Nome: Enzo Xavier Coelho - RM563379
 - Nome: Matheus Gianolli - RM565258
-- Nome: Larissa Juvenal de Magalhães - RM 566457
-- Nome: Julia - RM
+- Nome: Larissa Juvenal de Magalhães - RM566457
+- Nome: Julia - RM565568
 
 ## Descrição do Projeto
 
@@ -127,11 +127,138 @@ Os endpoints foram desenvolvidos utilizando Spring Boot e integrados com a camad
 <img width="640" height="269" alt="image" src="https://github.com/user-attachments/assets/b7a6a2a8-7b5a-40cf-b7f8-8a9e536722ac" />
 
 
-kk
 
 
 
 
-## Etapa 5 - Testes no Postman/Insomnia
 
-A preencher pelo responsável pelos testes e prints.
+# Etapa 5 - Testes dos Endpoints no Insomnia
+
+Nesta etapa foram realizados testes completos dos endpoints CRUD da aplicação utilizando o Insomnia, validando a integração entre Controller, Service, Repository e Banco de Dados Oracle.
+
+## Inicialização da API
+
+A aplicação foi iniciada com sucesso utilizando Spring Boot na porta `8080`.
+
+<img width="1365" height="30" alt="api-rodandp" src="https://github.com/user-attachments/assets/98f88b06-9b15-4aaf-a3f7-e77a14bbff0a" />
+
+---
+
+## Teste GET - Listagem Inicial
+
+Endpoint responsável por listar todos os brinquedos cadastrados.
+
+```http
+GET /brinquedos
+```
+Resultado inicial da aplicação sem registros cadastrados:
+
+<img width="1110" height="320" alt="Captura de tela 2026-05-09 161833" src="https://github.com/user-attachments/assets/4870b89a-48ee-405d-8402-d92d75b2022f" />
+
+---
+
+## Teste POST - Cadastro de brinquedo
+
+Endpoint responsável por cadastrar um novo brinquedo no banco de dados Oracle.
+
+```http
+POST /brinquedos
+```
+
+JSON enviado:
+
+```http
+{
+  "nome": "Hot Wheels",
+  "tipo": "Carrinho",
+  "classificacao": "5+",
+  "tamanho": "Pequeno",
+  "preco": 29.90
+}
+```
+
+Resultado do cadastro realizado com sucesso:
+
+<img width="1120" height="422" alt="Captura de tela 2026-05-09 162002" src="https://github.com/user-attachments/assets/24af1f84-3419-4bff-ae67-f3f1d2be50e2" />
+
+---
+
+## Teste GET - Listagem Após Cadastro
+
+Validação da listagem após inserção do brinquedo.
+
+<img width="1118" height="392" alt="Captura de tela 2026-05-09 162229" src="https://github.com/user-attachments/assets/490f9289-dc4b-4a1a-85bb-858e8bab022f" />
+
+---
+
+## Teste GET por ID
+
+Busca de brinquedo utilizando identificador único.
+
+```http
+GET /brinquedos/1
+```
+
+<img width="1118" height="382" alt="Captura de tela 2026-05-09 162244" src="https://github.com/user-attachments/assets/34aacae9-7775-4c63-82a1-3138fa714623" />
+
+---
+
+## Teste PUT - Atualização de Brinquedo
+
+```http
+PUT /brinquedos/1
+```
+
+JSON enviado:
+
+```http
+{
+  "nome": "Hot Wheels Premium",
+  "tipo": "Carrinho",
+  "classificacao": "6+",
+  "tamanho": "Médio",
+  "preco": 49.90
+}
+```
+Resultado da atualização:
+
+<img width="1117" height="389" alt="Captura de tela 2026-05-09 162320" src="https://github.com/user-attachments/assets/27162adb-5f83-4d22-a914-8981a4a6a114" />
+
+---
+
+## Teste GET - Validação da Atualização
+
+Confirmação da atualização realizada no banco de dados.
+
+<img width="1122" height="415" alt="Captura de tela 2026-05-09 162346" src="https://github.com/user-attachments/assets/7f7fa605-62cf-4bc0-a597-e48e04569918" />
+
+---
+
+## Teste DELETE - Remoção de Brinquedo
+
+Remoção do brinquedo utilizando o endpoint DELETE.
+
+```http
+DELETE /brinquedos/1
+```
+
+<img width="1122" height="357" alt="Captura de tela 2026-05-09 162406" src="https://github.com/user-attachments/assets/382457b0-dfce-4bbf-826c-798ef67f366f" />
+
+---
+
+## Teste Final - Lista Vazía
+
+Validação final demonstrando que o registro foi removido corretamente.
+
+<img width="1115" height="333" alt="Captura de tela 2026-05-09 162418" src="https://github.com/user-attachments/assets/3ad69879-fe03-4dc4-ac86-0fec7b66a237" />
+
+---
+
+## Conclusão
+
+O projeto foi desenvolvido utilizando arquitetura em camadas com Spring Boot, Oracle Database e Spring Data JPA, implementando com sucesso todas as operações CRUD da aplicação.
+
+Os testes realizados no Insomnia validaram o correto funcionamento dos endpoints e da persistência dos dados no banco Oracle.
+
+
+
