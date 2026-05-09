@@ -144,7 +144,7 @@ A aplicação foi iniciada com sucesso utilizando Spring Boot na porta `8080`.
 
 ---
 
-## Teste GET - Listagem Inicial
+### Teste GET - Listagem Inicial
 
 Endpoint responsável por listar todos os brinquedos cadastrados.
 
@@ -157,7 +157,7 @@ Resultado inicial da aplicação sem registros cadastrados:
 
 ---
 
-## Teste POST - Cadastro de brinquedo
+### Teste POST - Cadastro de brinquedo
 
 Endpoint responsável por cadastrar um novo brinquedo no banco de dados Oracle.
 
@@ -183,7 +183,7 @@ Resultado do cadastro realizado com sucesso:
 
 ---
 
-## Teste GET - Listagem Após Cadastro
+### Teste GET - Listagem Após Cadastro
 
 Validação da listagem após inserção do brinquedo.
 
@@ -191,7 +191,7 @@ Validação da listagem após inserção do brinquedo.
 
 ---
 
-## Teste GET por ID
+### Teste GET por ID
 
 Busca de brinquedo utilizando identificador único.
 
@@ -203,7 +203,7 @@ GET /brinquedos/1
 
 ---
 
-## Teste PUT - Atualização de Brinquedo
+### Teste PUT - Atualização de Brinquedo
 
 ```http
 PUT /brinquedos/1
@@ -226,7 +226,7 @@ Resultado da atualização:
 
 ---
 
-## Teste GET - Validação da Atualização
+### Teste GET - Validação da Atualização
 
 Confirmação da atualização realizada no banco de dados.
 
@@ -234,7 +234,7 @@ Confirmação da atualização realizada no banco de dados.
 
 ---
 
-## Teste DELETE - Remoção de Brinquedo
+### Teste DELETE - Remoção de Brinquedo
 
 Remoção do brinquedo utilizando o endpoint DELETE.
 
@@ -246,7 +246,7 @@ DELETE /brinquedos/1
 
 ---
 
-## Teste Final - Lista Vazía
+### Teste Final - Lista Vazía
 
 Validação final demonstrando que o registro foi removido corretamente.
 
