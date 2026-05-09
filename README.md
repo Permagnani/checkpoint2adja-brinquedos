@@ -8,7 +8,7 @@ Projeto desenvolvido para a disciplina de Programação Spring Boot com Persist�
 - Nome: Enzo Xavier Coelho - RM563379
 - Nome: Matheus Gianolli - RM565258
 - Nome: Larissa Juvenal de Magalhães - RM566457
-- Nome: Julia - RM565568
+- Nome: Júlia Menezes - RM565568
 
 ## Descrição do Projeto
 
